@@ -31,7 +31,6 @@ class Block:
         return "Hash: " + str(self.hash()) + "\nBlock Number: " + str(self.blockNumber) + "\nBlock Data: " + str(self.data) + "\nHashes: " + str(self.nonce) + "\n"
 
 class Blockchain:
-    # Difficulty of mining
     diff = 20
     maxNonce = 2 ** 32
     target = 2 ** (256 - diff)
